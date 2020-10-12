@@ -1,0 +1,15 @@
+load --int=timer ../spl/spl_progs/interrupt_handlers/timer_interrupt/timer_interrupt_stage14.xsm
+load --int=console ../spl/spl_progs/interrupt_handlers/console_interrupt/console_interrupt_stage16.xsm
+load --int=disk ../spl/spl_progs/interrupt_handlers/disk_interrupt/disk_interrupt_stage18.xsm
+load --exhandler ../spl/spl_progs/interrupt_handlers/exception_handler/exception_handler.xsm
+load --int=6 ../spl/spl_progs/interrupt_handlers/int6/int6_stage16.xsm
+load --int=7 ../spl/spl_progs/interrupt_handlers/int7/int7.xsm
+load --int=9 ../spl/spl_progs/interrupt_handlers/int9/int9_stage19.xsm
+load --int=10 ../spl/spl_progs/interrupt_handlers/int10/int_10_handler.xsm
+load --module 0 ../spl/spl_progs/modules/resource_manager/resource_manager_stage18.xsm
+load --module 1 ../spl/spl_progs/modules/process_manager/process_manager_stage19.xsm
+load --module 2 ../spl/spl_progs/modules/memory_manager/memory_manager_stage19.xsm
+load --module 4 ../spl/spl_progs/modules/device_manager/device_manager_stage18.xsm
+load --module 5 ../spl/spl_progs/modules/scheduler_module/scheduler_stage14.xsm
+load --module 7 ../spl/spl_progs/modules/boot_module/boot_module_stage19.xsm
+load --os ../spl/spl_progs/os_startup_code/os_startup_code.xsm
