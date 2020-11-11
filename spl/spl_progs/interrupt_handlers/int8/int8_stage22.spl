@@ -14,6 +14,7 @@ childpt=PROCESS_TABLE+childPID*16;
 if(childPID==-1) then // free process table not available
     [parentpt+9]=0; 
     R0=-1;
+    [([[parentpt+14]+2*(([parentpt+13]-1)/512)]*512)+(([parentpt+13]-1)%512)]=R0;
     SP=[parentpt+13];
     ireturn;
 endif;
