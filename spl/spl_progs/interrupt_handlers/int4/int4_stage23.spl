@@ -63,7 +63,7 @@ if(functionNum==1) then // create file
     [rootEntry+0]=fileName;
     [rootEntry+1]=0;
     [rootEntry+2]=DATA;
-    [rootEntry+3]=[pt+3];
+    [rootEntry+3]=[USER_TABLE+2*[pt+3]];
     [rootEntry+4]=permission;
     [pt+9]=0;
     R0=0;
